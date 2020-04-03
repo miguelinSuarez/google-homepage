@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  .float-right {
+    float: right;
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  .float-center {
+    float: center;
+  }
+
+  div {
+    height: 100px;
+    margin: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  li {
+    float: center;
+  }
+
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2px 4px;
+    text-decoration: none;
+  }
+
+  .border-round {
+    border-radius: 10px;
+  }
+
+  #above-bar {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: -15px;
+  }
+
+  #below-bar {
+    margin-top: 500px;
+    font-size: 14px;
+    margin-left: -27px;
+    display: block;
+    background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+    height: auto;
+    visibility: visible;
+    bottom: 0;
+    height: 35px;
+    position: fixed;
+    width: 100%;
+  }
+
+  .sign-in {
+    color: #ffffff;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: -webkit-linear-gradient(top, #4387fd, #4683ea);
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+    font-family: arial, sans-serif;
+    cursor: default;
+    text-decoration: none;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+  }
+
+  .google {
+    padding-top: 109px;
+    text-align: -webkit-center;
+  }
+
+  .search-bar {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    margin-top: -37px;
+    font-size: 16px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    -webkit-appearance: textfield;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    width: 482px;
+  }
+
+  .apps {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    background-position: -132px -38px;
+    opacity: .55 display: inline-block;
+    line-height: normal;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  @media (min-resolution: 1.25dppx),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  not all .gb_qc {
+    background-image: url(//ssl.gstatic.com/gb/images/i2_2ec824b0.png);
+  }
+
+  .about {
+    display: inline-block;
+    padding-left: 15px;
+    color: #000;
+    opacity: 0.75
+  }
+  button {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+  .advertising {
+    padding-left: 27px;
+    margin: 0 !important;
+    
+  }
+</style>
+
+<head>
+  <title>TOP: Google Mini-Clone Project</title>
+</head>
+
+<body>
+  <ul id="above-bar">
+    <li class="float-left about"><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About<a></li>
+    <li class="float-left about"><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store<a></li>
+    <li class="float-right sign-in"><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F%3Fgws_rd%3Dssl&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign In<a></li>
+    <li class="float-right apps"><a href="https://www.google.com/?gws_rd=ssl">Apps<a></li>
+    <li class="float-right apps"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images<a></li>
+    <li class="float-right apps"><a href="https://www.google.com/gmail/about/#">Gmail<a></li>
+
+  </ul>
+  <center>
+    <div>
+      <figure id="img-div">
+        <img class="google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"><br>
+    </div>
+    <div style="padding-top: 109px;">
+      <input maxlength="2048" type="text" class="border-round search-bar"><br>
+      <button type="submit">Google Search</button>
+      <button type="lucky">I'm Feeling Lucky</button>
+    </div>
+
+</body>
+
+<ul id="below-bar">
+  <li class="float-left advertising"><a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising<a></li>
+  <li class="float-left"><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business<a></li>
+  <li class="float-right"><a href="https://www.google.com/?gws_rd=ssl">Settings<a></li>
+  <li class="float-right"><a href="https://policies.google.com/terms?fg=1">Terms<a></li>
+  <li class="float-right"><a href="https://policies.google.com/privacy?fg=1">Privacy<a></li>
+
+</ul>
+
+</html>
